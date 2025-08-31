@@ -1,6 +1,6 @@
 ---
 mode: 'agent'
-tools: ['changes', 'codebase', 'editFiles', 'findTestFiles', 'problems', 'runCommands', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'testFailure', 'usages']
+tools: ['changes', 'codebase', 'editFiles', 'findTestFiles', 'problems', 'runCommands', 'search', 'searchResults', 'terminalLastCommand', 'testFailure', 'usages']
 description: 'Create Spring Boot Java project skeleton'
 ---
 

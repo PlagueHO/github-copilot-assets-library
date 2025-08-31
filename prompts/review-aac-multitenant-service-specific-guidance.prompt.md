@@ -2,7 +2,7 @@
 mode: 'agent'
 description: 'Review Azure Architecture Center multitenant service-specific guidance to ensure it is up-to-date with multitenant features provided by the service and guidance is still relevant.'
 model: GPT-5 (Preview)
-tools: ['codebase', 'think', 'problems', 'fetch', 'searchResults', 'githubRepo', 'todos', 'search', 'runTasks', 'Microsoft Docs']
+tools: ['codebase', 'problems', 'fetch', 'searchResults', 'githubRepo', 'search', 'runTasks']
 ---
 
 # Review Azure Architecture Center Multitenant Service-Specific Guidance document
