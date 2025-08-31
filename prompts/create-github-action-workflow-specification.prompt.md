@@ -1,7 +1,7 @@
 ---
 mode: 'agent'
 description: 'Create a formal specification for an existing GitHub Actions CI/CD workflow, optimized for AI consumption and workflow maintenance.'
-tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runInTerminal2', 'runNotebooks', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI', 'microsoft.docs.mcp', 'github', 'Microsoft Docs']
+tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runNotebooks', 'runTasks', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
 ---
 # Create GitHub Actions Workflow Specification
 
@@ -45,10 +45,10 @@ graph TD
     B --> C[Job 2]
     C --> D[Job 3]
     D --> E[End]
-    
+
     B --> F[Parallel Job]
     F --> D
-    
+
     style A fill:#e1f5fe
     style E fill:#e8f5e8
 ```
@@ -259,7 +259,7 @@ graph TD
     subgraph "Build Phase"
         A[Lint] --> B[Test] --> C[Build]
     end
-    subgraph "Deploy Phase"  
+    subgraph "Deploy Phase"
         D[Staging] --> E[Production]
     end
     C --> D

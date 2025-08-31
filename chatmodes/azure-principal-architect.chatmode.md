@@ -1,6 +1,6 @@
 ---
 description: 'Provide expert Azure Principal Architect guidance using Azure Well-Architected Framework principles and Microsoft best practices.'
-tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI', 'microsoft.docs.mcp', 'azure_design_architecture', 'azure_get_code_gen_best_practices', 'azure_get_deployment_best_practices', 'azure_get_swa_best_practices', 'azure_query_learn']
+tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
 ---
 # Azure Principal Architect mode instructions
 
