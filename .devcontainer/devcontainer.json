@@ -1,100 +1,29 @@
 {
-    "name": "genai-database-explorer",
-    "image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-jammy",
-    "workspaceFolder": "/workspaces/genai-database-explorer",
-    "onCreateCommand": "bash ./.devcontainer/on-setup.sh",
-    // Features to add to the dev container. More info: https://containers.dev/features.
+    "name": "github-copilot-assets-library",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    // Minimal features required for repository maintenance (markdown + scripts)
     "features": {
-        "ghcr.io/devcontainers/features/azure-cli:1": {
-            "version": "latest"
-        },
-        "ghcr.io/devcontainers/features/dotnet:2": {
-            "version": "8.0",
-            "dotnetRuntimeVersions": "8.0",
-            "aspNetCoreRuntimeVersions": "8.0"
-        },
-        "ghcr.io/devcontainers/features/powershell:1": {
-            "version": "latest"
-        },
         "ghcr.io/devcontainers/features/git:1": {
             "version": "latest"
         },
         "ghcr.io/devcontainers/features/github-cli:1": {
             "version": "latest"
         },
+        // Retain Node to run helper scripts like update-readme.js
         "ghcr.io/devcontainers/features/node:1": {
-            "version": "lts",
-            "nodeGypDependencies": true
-        },
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {
-            "version": "latest",
-            "enableNonRootDocker": "true"
+            "version": "lts"
         }
     },
-    // Configure tool-specific properties.
     "customizations": {
-        // Configure properties specific to VS Code.
         "vscode": {
-            "settings": {
-                "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
-                "dotnet.inlayHints.enableInlayHintsForParameters": true,
-                "dotnet.inlayHints.enableInlayHintsForLiteralParameters": true,
-                "dotnet.inlayHints.enableInlayHintsForIndexerParameters": true,
-                "dotnet.inlayHints.enableInlayHintsForObjectCreationParameters": true,
-                "dotnet.inlayHints.enableInlayHintsForOtherParameters": true,
-                "dotnet.inlayHints.enableInlayHintsForTypes": true,
-                "dotnet.inlayHints.enableInlayHintsForImplicitVariableTypes": true,
-                "dotnet.inlayHints.enableInlayHintsForImplicitObjectCreation": true,
-                "dotnet.preferCSharpExtension": true,
-                "bicep.experimental.deployments.enabled": true,
-                "bicep.suppressedWarnings": [],
-                "files.associations": {
-                    "*.bicep": "bicep"
-                }
-            },
             "extensions": [
-                // .NET and C# Development
-                "ms-dotnettools.csharp",
-                "ms-dotnettools.csdevkit",
-                "ms-dotnettools.vscode-dotnet-runtime",
-                
-                // Azure Development
-                "ms-azuretools.vscode-bicep",
-                "ms-azuretools.azure-dev",
-                "ms-vscode.azurecli",
-                "ms-azuretools.vscode-docker",
-                "ms-azuretools.vscode-azureresourcegroups",
-                "ms-azuretools.vscode-azurefunctions",
-                "ms-azuretools.vscode-azureappservice",
-                "ms-azuretools.vscode-azurestorage",
-                "ms-azuretools.vscode-cosmosdb",
-                "ms-vscode.vscode-node-azure-pack",
-                
-                // GitHub and DevOps
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
                 "GitHub.vscode-github-actions",
-                "GitHub.vscode-pull-request-github"
+                "GitHub.vscode-pull-request-github",
+                "davidanson.vscode-markdownlint"
             ]
         }
     },
-    
-    // Add additional configuration
-    "remoteUser": "vscode",
-    "postCreateCommand": "dotnet restore",
-    "forwardPorts": [5000, 5001, 7071],
-    "portsAttributes": {
-        "5000": {
-            "label": "HTTP",
-            "protocol": "http"
-        },
-        "5001": {
-            "label": "HTTPS",
-            "protocol": "https"
-        },
-        "7071": {
-            "label": "Azure Functions",
-            "protocol": "http"
-        }
-    }
-  }
+    "remoteUser": "vscode"
+}
