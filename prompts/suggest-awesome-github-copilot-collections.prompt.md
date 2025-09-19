@@ -12,7 +12,7 @@ Analyze current repository context and suggest relevant collections from the [Gi
 1. **Fetch Available Collections**: Extract collection list and descriptions from [awesome-copilot README.collections.md](https://github.com/github/awesome-copilot/blob/main/README.collections.md)
 2. **Scan Local Assets**: Discover existing prompt files in `prompts/`, instruction files in `instructions/`, and chat modes in `chatmodes/` folders
 3. **Extract Local Descriptions**: Read front matter from local asset files to understand existing capabilities
-4. **Analyze Repository Context**: Review chat history, repository files, programming languages, frameworks, and current project needs
+4. **Analyze Context**: If needs are explicitly stated, prioritize those, otherwise review chat history, repository files, and current project needs
 5. **Match Collection Relevance**: Compare available collections against identified patterns and requirements
 6. **Check Asset Overlap**: For relevant collections, analyze individual items to avoid duplicates with existing repository assets
 7. **Present Collection Options**: Display relevant collections with descriptions, item counts, and rationale for suggestion

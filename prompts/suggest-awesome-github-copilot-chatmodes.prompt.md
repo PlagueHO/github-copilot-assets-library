@@ -13,7 +13,7 @@ Analyze current repository context and suggest relevant Custom Chat Modes files 
 1. **Fetch Available Custom Chat Modes**: Extract Custom Chat Modes list and descriptions from [awesome-copilot README.chatmodes.md](https://github.com/github/awesome-copilot/blob/main/README.chatmodes.md)
 2. **Scan Local Custom Chat Modes**: Discover existing custom chat mode files in `.github/chatmodes/` folder
 3. **Extract Descriptions**: Read front matter from local custom chat mode files to get descriptions
-4. **Analyze Context**: Review chat history, repository files, and current project needs
+4. **Analyze Context**: If needs are explicitly stated, prioritize those, otherwise review chat history, repository files, and current project needs
 5. **Compare Existing**: Check against custom chat modes already available in this repository
 6. **Match Relevance**: Compare available custom chat modes against identified patterns and requirements
 7. **Present Options**: Display relevant custom chat modes with descriptions, rationale, and availability status

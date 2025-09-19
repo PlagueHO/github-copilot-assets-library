@@ -12,7 +12,7 @@ Analyze current repository context and suggest relevant copilot-instruction file
 1. **Fetch Available Instructions**: Extract instruction list and descriptions from [awesome-copilot README.instructions.md](https://github.com/github/awesome-copilot/blob/main/README.instructions.md)
 2. **Scan Local Instructions**: Discover existing instruction files in `instructions/` folder
 3. **Extract Descriptions**: Read front matter from local instruction files to get descriptions and `applyTo` patterns
-4. **Analyze Context**: Review chat history, repository files, and current project needs
+4. **Analyze Context**: If needs are explicitly stated, prioritize those, otherwise review chat history, repository files, and current project needs
 5. **Compare Existing**: Check against instructions already available in this repository
 6. **Match Relevance**: Compare available instructions against identified patterns and requirements
 7. **Present Options**: Display relevant instructions with descriptions, rationale, and availability status

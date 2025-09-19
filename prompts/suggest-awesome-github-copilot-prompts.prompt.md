@@ -12,7 +12,7 @@ Analyze current repository context and suggest relevant prompt files from the [G
 1. **Fetch Available Prompts**: Extract prompt list and descriptions from [awesome-copilot README.prompts.md](https://github.com/github/awesome-copilot/blob/main/README.prompts.md)
 2. **Scan Local Prompts**: Discover existing prompt files in `.github/prompts/` folder
 3. **Extract Descriptions**: Read front matter from local prompt files to get descriptions
-4. **Analyze Context**: Review chat history, repository files, and current project needs
+4. **Analyze Context**: If needs are explicitly stated, prioritize those, otherwise review chat history, repository files, and current project needs
 5. **Compare Existing**: Check against prompts already available in this repository
 6. **Match Relevance**: Compare available prompts against identified patterns and requirements
 7. **Present Options**: Display relevant prompts with descriptions, rationale, and availability status
