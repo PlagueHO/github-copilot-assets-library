@@ -22,6 +22,8 @@ Analyze current repository context and suggest relevant collections from the [Gi
 
 ## Context Analysis Criteria
 
+If needs are explicitly stated, prioritize those. Otherwise, analyze the following:
+
 🔍 **Repository Patterns**:
 - Programming languages used (.cs, .js, .py, .ts, .bicep, .tf, etc.)
 - Framework indicators (ASP.NET, React, Azure, Next.js, Angular, etc.)

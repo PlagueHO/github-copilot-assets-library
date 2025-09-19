@@ -22,6 +22,8 @@ Analyze current repository context and suggest relevant copilot-instruction file
 
 ## Context Analysis Criteria
 
+If needs are explicitly stated, prioritize those. Otherwise, analyze the following:
+
 🔍 **Repository Patterns**:
 - Programming languages used (.cs, .js, .py, .ts, etc.)
 - Framework indicators (ASP.NET, React, Azure, Next.js, etc.)

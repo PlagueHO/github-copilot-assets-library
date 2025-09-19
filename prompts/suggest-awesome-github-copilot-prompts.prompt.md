@@ -22,6 +22,8 @@ Analyze current repository context and suggest relevant prompt files from the [G
 
 ## Context Analysis Criteria
 
+If needs are explicitly stated, prioritize those. Otherwise, analyze the following:
+
 🔍 **Repository Patterns**:
 - Programming languages used (.cs, .js, .py, etc.)
 - Framework indicators (ASP.NET, React, Azure, etc.)
