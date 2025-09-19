@@ -1,15 +1,15 @@
 ---
 mode: 'agent'
 description: 'Suggest relevant GitHub Copilot prompt files from the awesome-copilot repository based on current repository context and chat history, avoiding duplicates with existing prompts in this repository.'
-tools: ['changes', 'codebase', 'editFiles', 'fetch', 'findTestFiles', 'githubRepo', 'new', 'openSimpleBrowser', 'problems', 'runCommands', 'runTasks', 'runTests', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI', 'github']
+tools: ['runTasks', 'edit', 'search', 'todos', 'think', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo']
 ---
 # Suggest Awesome GitHub Copilot Prompts
 
-Analyze current repository context and suggest relevant prompt files from the [GitHub awesome-copilot repository](https://github.com/github/awesome-copilot/tree/main/prompts) that are not already available in this repository.
+Analyze current repository context and suggest relevant prompt files from the [GitHub awesome-copilot repository](https://github.com/github/awesome-copilot/blob/main/README.prompts.md) that are not already available in this repository.
 
 ## Process
 
-1. **Fetch Available Prompts**: Extract prompt list and descriptions from [awesome-copilot README](https://github.com/github/awesome-copilot/blob/main/README.md)
+1. **Fetch Available Prompts**: Extract prompt list and descriptions from [awesome-copilot README.prompts.md](https://github.com/github/awesome-copilot/blob/main/README.prompts.md)
 2. **Scan Local Prompts**: Discover existing prompt files in `.github/prompts/` folder
 3. **Extract Descriptions**: Read front matter from local prompt files to get descriptions
 4. **Analyze Context**: Review chat history, repository files, and current project needs
