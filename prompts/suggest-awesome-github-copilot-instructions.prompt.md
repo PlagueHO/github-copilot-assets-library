@@ -1,7 +1,7 @@
 ---
 mode: 'agent'
 description: 'Suggest relevant GitHub Copilot instruction files from the awesome-copilot repository based on current repository context and chat history, avoiding duplicates with existing instructions in this repository.'
-tools: ['runTasks', 'edit', 'search', 'todos', 'think', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo']
+tools: ['edit', 'search', 'runCommands', 'runTasks', 'think', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'todos', 'search']
 ---
 # Suggest Awesome GitHub Copilot Instructions
 
@@ -9,20 +9,19 @@ Analyze current repository context and suggest relevant copilot-instruction file
 
 ## Process
 
-1. **Fetch Available Instructions**: Extract instruction list and descriptions from [awesome-copilot README.instructions.md](https://github.com/github/awesome-copilot/blob/main/README.instructions.md)
-2. **Scan Local Instructions**: Discover existing instruction files in `instructions/` folder
+1. **Fetch Available Instructions**: Extract instruction list and descriptions from [awesome-copilot README.instructions.md](https://github.com/github/awesome-copilot/blob/main/README.instructions.md). Must use `#fetch` tool.
+2. **Scan Local Instructions**: Discover existing instruction files in `.github/instructions/` folder
 3. **Extract Descriptions**: Read front matter from local instruction files to get descriptions and `applyTo` patterns
-4. **Analyze Context**: If needs are explicitly stated, prioritize those, otherwise review chat history, repository files, and current project needs
+4. **Analyze Context**: Review chat history, repository files, and current project needs
 5. **Compare Existing**: Check against instructions already available in this repository
 6. **Match Relevance**: Compare available instructions against identified patterns and requirements
 7. **Present Options**: Display relevant instructions with descriptions, rationale, and availability status
 8. **Validate**: Ensure suggested instructions would add value not already covered by existing instructions
 9. **Output**: Provide structured table with suggestions, descriptions, and links to both awesome-copilot instructions and similar local instructions
-10. **Next Steps**: If any suggestions are made, provide instructions that GitHub Copilot will be able to follow to add the suggested instructions to the repository by downloading the file into the instructions directory. Offer to do this automatically if the user confirms.
+   **AWAIT** user request to proceed with installation of specific instructions. DO NOT INSTALL UNLESS DIRECTED TO DO SO.
+10. **Download Assets**: For requested instructions, automatically download and install individual instructions to `.github/instructions/` folder. Do NOT adjust content of the files.  Use `#todos` tool to track progress. Prioritize use of `#fetch` tool to download assets, but may use `curl` using `#runInTerminal` tool to ensure all content is retrieved.
 
 ## Context Analysis Criteria
-
-If needs are explicitly stated, prioritize those. Otherwise, analyze the following:
 
 🔍 **Repository Patterns**:
 - Programming languages used (.cs, .js, .py, .ts, etc.)
