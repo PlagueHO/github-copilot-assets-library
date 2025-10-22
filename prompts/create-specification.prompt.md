@@ -1,7 +1,7 @@
 ---
-mode: 'agent'
+agent: 'agent'
 description: 'Create a new specification file for the solution, optimized for Generative AI consumption.'
-tools: ['changes', 'codebase', 'editFiles', 'extensions', 'fetch', 'githubRepo', 'openSimpleBrowser', 'problems', 'runTasks', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages', 'vscodeAPI']
+tools: ['edit', 'runNotebooks', 'search', 'runCommands', 'runTasks', 'runSubagent', 'usages', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'todos']
 ---
 # Create Specification
 
@@ -111,9 +111,9 @@ tags: [Optional: List of relevant tags or categories, e.g., `infrastructure`, `p
 
 ## 9. Examples & Edge Cases
 
-```code
-// Code snippet or data example demonstrating the correct application of the guidelines, including edge cases
-```
+    ```code
+    // Code snippet or data example demonstrating the correct application of the guidelines, including edge cases
+    ```
 
 ## 10. Validation Criteria
 

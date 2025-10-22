@@ -1,5 +1,6 @@
 ---
-description: "Comprehensive AI prompt engineering safety review and improvement prompt. Analyzes prompts for safety, bias, security vulnerabilities, and effectiveness while providing detailed improvement recommendations with extensive frameworks, testing methodologies, and educational content."
+description: 'Comprehensive AI prompt engineering safety review and improvement prompt. Analyzes prompts for safety, bias, security vulnerabilities, and effectiveness while providing detailed improvement recommendations with extensive frameworks, testing methodologies, and educational content.'
+agent: 'agent'
 ---
 
 # AI Prompt Engineering Safety Review & Improvement
@@ -226,4 +227,4 @@ Provide your analysis in the following structured format:
 - **Maintain educational value** in your explanations
 - **Follow industry best practices** from Microsoft, OpenAI, and Google AI
 
-Remember: Your goal is to help create prompts that are not only effective but also safe, unbiased, secure, and responsible. Every improvement should enhance both functionality and safety. 
+Remember: Your goal is to help create prompts that are not only effective but also safe, unbiased, secure, and responsible. Every improvement should enhance both functionality and safety.

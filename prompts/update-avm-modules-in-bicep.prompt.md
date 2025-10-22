@@ -1,6 +1,7 @@
 ---
+agent: 'agent'
 description: 'Update Azure Verified Modules (AVM) to latest versions in Bicep files.'
-tools: ['edit', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'runSubagent', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'todos']
+tools: ['edit', 'runNotebooks', 'search', 'runCommands', 'runTasks', 'Azure MCP/search', 'runSubagent', 'usages', 'problems', 'changes', 'testFailure', 'fetch', 'githubRepo', 'extensions', 'todos']
 ---
 # Update Azure Verified Modules in Bicep Files
 

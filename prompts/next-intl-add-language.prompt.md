@@ -1,5 +1,6 @@
 ---
-tools: ['edit', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'Azure MCP/search', 'runSubagent', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions', 'todos']
+agent: 'agent'
+tools: ['changes','codebase', 'edit/editFiles', 'findTestFiles', 'search', 'writeTest']
 description: 'Add new language to a Next.js + next-intl application'
 ---
 
