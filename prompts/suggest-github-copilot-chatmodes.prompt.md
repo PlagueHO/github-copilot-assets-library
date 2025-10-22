@@ -1,7 +1,6 @@
 ---
-mode: 'agent'
 description: 'Suggest relevant GitHub Copilot chatmode files from a GitHub repository based on current repository context and chat history, avoiding duplicates with existing chatmodes in this repository.'
-tools: ['runTasks', 'edit', 'search', 'todos', 'think', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo']
+tools: ['runTasks', 'edit', 'search', 'todos', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo']
 ---
 
 # Suggest GitHub Copilot Chatmodes
