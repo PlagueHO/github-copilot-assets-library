@@ -31,6 +31,13 @@
             "type": "stdio",
             "command": "mcp-server-azuredevops",
             "args": ["${input:ado_org}"]
+        },
+        "brightdata": {
+            "type": "http",
+            "url": "https://mcp.brightdata.com/mcp?token=${input:brightdata_api_token}",
+            "headers": {
+                "Authorization": "Bearer ${input:brightdata_api_token}"
+            }
         }
     },
     "inputs": [
@@ -44,6 +51,12 @@
             "id": "ado_org",
             "type": "promptString",
             "description": "Azure DevOps organization name  (e.g. 'contoso')"
+        },
+        {
+            "id": "brightdata_api_token",
+            "type": "promptString",
+            "description": "Bright Data API Token",
+            "password": true
         }
     ]
 }
